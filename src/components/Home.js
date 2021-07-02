@@ -9,7 +9,6 @@ import AboutUs from '../pics/aboutuspic.jpg'
 const Home = () => {
     return (
         <div>
-            {/*proslediti props na menupartove i onda proveriti sve i cepaj css*/}
             <Header />
             <MenuPart name = "Albums" text = "The Chainsmokers currently have 3 albums recorded. Fourth will be here soon. Click here to listen to them!" pic = {Albums} link = "/albums" />
             <MenuPart name = "Shop" text = "You want to buy some TCS stuff? No problem! Click here to do that. Quality first!" pic = {Shop} link = "/shop" />
