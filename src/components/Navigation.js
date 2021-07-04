@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Navigation = () => {
+const Navigation = (props) => {
     return (
         <nav>
                 <ul>
@@ -22,8 +22,11 @@ const Navigation = () => {
                     </li>
                     <li>
                         <Link to = "/aboutus">
-                            About Us
+                            About us
                         </Link>
+                    </li>
+                    <li>
+                        {props.active}
                     </li>
                 </ul>
             </nav>

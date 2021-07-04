@@ -1,10 +1,11 @@
 import React from 'react'
 import Navigation from './Navigation'
 
-const Header = () => {
+const Header = (props) => {
     return (
         <header>
-           <Navigation /> 
+           <Navigation active = {props.active} />
+           <section></section>
         </header>
     )
 }

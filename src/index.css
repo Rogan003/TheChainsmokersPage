@@ -41,12 +41,17 @@ footer div a:hover{
 
 /*header*/
 header{
+  font-size: 170%;
+}
+header section{
   background-image: url('./pics/backgroundpic.jpg');
   background-size: 100%;
   width: 100%;
   padding-top: 5%;
   padding-bottom: 45%;
-  font-size: 170%;
+}
+header nav{
+  background-color: #863c83;
 }
 header nav ul{
   display: flex;
@@ -58,14 +63,19 @@ header nav ul{
 header nav ul li{
   list-style-type: none;
   margin-right: 2%;
+  padding: 1%;
+}
+header nav ul li:last-child{
+  color: #5e1b5b;
+  font-style: italic;
 }
 header nav ul a{
-  color: #b49700;
+  color: #c0aa3d;
   text-decoration: none;
-  transition: color 1s;
+  transition: color 0.8s;
 }
 header nav ul a:hover{
-  color: #ffea81;
+  color: #ebe0aa;
 }
 
 /*menu*/
@@ -142,42 +152,15 @@ header nav ul a:hover{
   background-color:rgb(102, 0, 85);
   cursor: pointer;
 }
-
-/*aboutus*/
-.aboutus{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-right: 10%;
-  margin-left: 30%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-.aboutus section{
-  width: 50%;
-  text-align: center;
-  padding: 5%;
-  border-radius: 10%;
-  transition: background-color 1s;
-}
-.aboutus section:hover{
-  background-color: #c57dc2;
-}
-.aboutus img{
-  width: 80%;
-  height: 80%;
-  border-radius: 10%;
-}
-.aboutus button{
-  background-color: #cc07b2;
-  border-radius: 30%;
-  height: 50px;
-  width: 100px;
-  transition: background-color 1s;
-}
-.aboutus button:hover{
-  background-color:rgb(102, 0, 85);
-  cursor: pointer;
+@media only screen and (max-width: 1000px) {
+  .albums {
+    display: block;
+  }
+  .albums section{
+    width: 50%;
+    margin-left: 22%;
+    border-radius: 10%;
+  }
 }
 
 /*shop*/
@@ -218,4 +201,47 @@ header nav ul a:hover{
   cursor: pointer;
 }
 
-/*polish it and make it responsive*/
+/*aboutus*/
+.aboutus{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.aboutus section{
+  width: 50%;
+  text-align: center;
+  padding: 5%;
+  border-radius: 10%;
+  transition: background-color 1s;
+}
+.aboutus section:hover{
+  background-color: #c57dc2;
+}
+.aboutus img{
+  width: 80%;
+  height: 80%;
+  border-radius: 10%;
+}
+.aboutus button{
+  background-color: #cc07b2;
+  border-radius: 30%;
+  height: 50px;
+  width: 100px;
+  transition: background-color 1s;
+}
+.aboutus button:hover{
+  background-color:rgb(102, 0, 85);
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .aboutus{
+    margin-left: 23%;
+  }
+  .aboutus section{
+    width: 75%;
+  }
+}

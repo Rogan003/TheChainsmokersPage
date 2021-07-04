@@ -12,7 +12,7 @@ import Item6 from '../pics/shop6.png'
 const Shop = () => {
     return (
         <div>
-            <Header />
+            <Header active = "Shop" />
             <article class = "shop">
                 <Item pic = {Item1} name = "The Chainsmokers Block Tee" price = "40$" />
                 <Item pic = {Item2} name = "Black Crystal Triad Hoodie" price = "65$" />
